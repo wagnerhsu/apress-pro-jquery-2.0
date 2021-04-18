@@ -2,16 +2,19 @@
 <html>
 <head>
     <title>Example</title>
-    <script src="jquery-2.0.2.js" type="text/javascript"></script>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css"/>
+    <script src="node_modules/jquery/dist/jquery.js"></script>
+    <script src="node_modules/popper.js/dist/umd/popper.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.js"></script>
     <link rel="stylesheet" type="text/css" href="styles.css"/>
      <script type="text/javascript">
         $(document).ready(function() {
             $("img").filter("[src*=s]").css("border", "thick double red");
-            
-            var jq = $("[for*=p]" );
+
+            const jq = $("[for*=p]");
             $("label").filter(jq).css("color", "blue");
-            
-            var elem = document.getElementsByTagName("label")[1];
+
+            const elem = document.getElementsByTagName("label")[1];
             $("label").filter(elem).css("font-size", "1.5em");
 
             $("img").filter(function(index) {
