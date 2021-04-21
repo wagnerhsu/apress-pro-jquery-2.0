@@ -7,8 +7,23 @@
 </head>
 <body>
 <h2 class="display-2">Pro jQuery</h2>
+<ol>
+    <li>
+        <abbr class="timeago" title="2021-04-21 14:16:35"></abbr>
+    </li>
+    <li>
+        <abbr class="timeago" title="2013-03-09 14:16:35"></abbr>
+    </li>
+</ol>
 <script src="node_modules/jquery/dist/jquery.js"></script>
 <script src="node_modules/popper.js/dist/umd/popper.js"></script>
 <script src="node_modules/bootstrap/dist/js/bootstrap.js"></script>
+<script src="node_modules/timeago/jquery.timeago.js"></script>
+<script src="node_modules/timeago/locales/jquery.timeago.zh-CN.js"></script>
+<script>
+    $(function () {
+        jQuery("abbr.timeago").timeago();
+    })
+</script>
 </body>
 </html>
