@@ -22,7 +22,8 @@
 <script src="node_modules/timeago/locales/jquery.timeago.zh-CN.js"></script>
 <script>
     $(function () {
-        jQuery("abbr.timeago").timeago();
+        $("abbr.timeago").timeago();
+        console.log($.timeago(new Date()));
     })
 </script>
 </body>
